@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Where Do You Stand? — Vehicle History</title>
+<title>Where Do You Stand? Your Vehicle History</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -352,7 +352,7 @@
     </div>
     <div class="eyebrow">Vehicle Equity Check</div>
     <h1>Where do you actually stand?</h1>
-    <p>Three vehicles, a few questions each. Two minutes. We'll show you how your position compares to where the market sits today.</p>
+    <p>Three vehicles, a few questions each. A few minutes. We'll show you how your position compares to where the market sits today.</p>
 
     <div class="odometer" id="odometer" aria-hidden="true">
       <div class="odo-digit active" data-digit="1">1</div>
@@ -476,7 +476,7 @@
             </label>
             <label class="pill">
               <input type="radio" name="v1_equity" value="na">
-              <span>N/A — no trade</span>
+              <span>N/A No trade</span>
             </label>
           </div>
         </div>
@@ -580,7 +580,7 @@
             </label>
             <label class="pill">
               <input type="radio" name="v2_equity" value="na">
-              <span>N/A — no trade</span>
+              <span>N/A No trade</span>
             </label>
           </div>
         </div>
@@ -593,7 +593,7 @@
         <span class="section-num">3</span>
         <span class="section-title">And the one before that</span>
       </div>
-      <p class="section-sub">Optional — but it helps us see your full trade cycle.</p>
+      <p class="section-sub">This helps us see your full trade cycle.</p>
 
       <div class="grid">
         <div class="field full">
@@ -684,7 +684,7 @@
             </label>
             <label class="pill">
               <input type="radio" name="v3_equity" value="na">
-              <span>N/A — no trade</span>
+              <span>N/A No trade</span>
             </label>
           </div>
         </div>
@@ -707,8 +707,8 @@
           <input type="text" id="c_email" name="c_email" placeholder="you@email.com" required>
         </div>
         <div class="field full">
-          <label for="c_phone">Phone (optional)</label>
-          <input type="text" id="c_phone" name="c_phone" placeholder="For a faster follow-up, if you'd like one">
+          <label for="c_phone">Phone Number</label>
+          <input type="text" id="c_phone" name="c_phone" placeholder="For a faster follow-up!">
         </div>
       </div>
     </section>
@@ -728,7 +728,7 @@
       </svg>
     </div>
     <h2>Almost there.</h2>
-    <p id="confirmText">Your email app should have opened with everything filled in — just hit send and we'll take it from there.</p>
+    <p id="confirmText">Your email app should have opened with everything filled in, just hit send and we'll take it from there.</p>
 
     <div id="fallback" style="display:none; margin-top:28px;">
       <p style="color:#c96a4f; font-size:13px;">Didn't open? No problem — copy your answers below and paste them into an email to <strong id="fallbackAddr"></strong>.</p>
@@ -820,7 +820,7 @@
       groups[prefix].push(`${FIELD_LABELS[key]}: ${value}`);
     });
 
-    let body = "Hi — here are my answers from the Vehicle Equity Check:\n\n";
+    let body = "Hi Matt, here are my answers from the Vehicle Equity Check:\n\n";
     ['v1','v2','v3','c'].forEach(g => {
       if(groups[g].length){
         body += `${SECTION_HEADERS[g]}\n${groups[g].join('\n')}\n\n`;
